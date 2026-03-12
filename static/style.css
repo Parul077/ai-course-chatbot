@@ -1,0 +1,302 @@
+/* Message animation */
+
+.message {
+    animation: fadeIn 0.25s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #eef2f3,
+        #dfe9f3
+    );
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 40px;
+}
+
+/* Chat Container */
+
+.chat-container {
+    width: 420px;
+    height: 650px;
+    background: white;
+    border-radius: 12px;
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.1),
+        0 20px 60px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Header */
+
+.chat-header {
+    background: linear-gradient(
+        135deg,
+        #43a047,
+        #2e7d32
+    );
+    color: white;
+    padding: 18px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 0.5px;
+}
+
+/* Chat Area */
+
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 25px 20px;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    scroll-behavior: smooth;
+}
+
+/* Message */
+
+.message {
+    max-width: 75%;
+    padding: 12px 15px;
+    border-radius: 15px;
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+
+/* User Message */
+
+.user {
+    align-self: flex-end;
+    background: #e3f2fd;
+    color: #0d47a1;
+    border-bottom-right-radius: 4px;
+}
+
+/* Bot Message */
+
+.bot {
+    align-self: flex-start;
+    background: #e8f5e9;
+    color: #1b5e20;
+    border-bottom-left-radius: 4px;
+}
+
+/* Typing indicator */
+
+#typing {
+    padding: 8px 20px;
+    font-size: 0.85em;
+    color: #777;
+    font-style: italic;
+    background: #fafafa;
+    border-top: 1px solid #f0f0f0;
+}
+
+/* Input Area */
+
+.chat-input {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #eee;
+    background: white;
+}
+
+/* Input */
+
+.chat-input input {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Button */
+
+.chat-input button {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin-left: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.chat-input button:hover {
+    background: #256628;
+}
+
+
+/* Message Row */
+
+.message-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+/* Bot alignment */
+
+.bot-row {
+    justify-content: flex-start;
+}
+
+/* User alignment */
+
+.user-row {
+    justify-content: flex-end;
+}
+
+/* Avatar */
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+/* Bot avatar */
+
+.bot-avatar {
+    background: #c8e6c9;
+}
+
+/* User avatar */
+
+.user-avatar {
+    background: #bbdefb;
+}
+
+/* Page Layout */
+
+.page-wrapper{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+}
+
+/* Landing Section */
+
+.landing{
+    text-align:center;
+    max-width:520px;
+}
+
+.landing h1{
+    font-size:28px;
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.landing p{
+    color:#555;
+    font-size:15px;
+    line-height:1.6;
+}
+
+/* Features Section */
+
+.features{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:15px;
+    max-width:500px;
+    margin-bottom:10px;
+}
+
+/* Individual Feature */
+
+.feature{
+    background:white;
+    border-radius:10px;
+    padding:12px 15px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+
+    font-size:14px;
+}
+
+/* Feature Icon */
+
+.feature span{
+    font-size:20px;
+}
+
+/* Analytics Section */
+
+.analytics{
+    margin-top:25px;
+    text-align:center;
+    margin-bottom: 30px;
+}
+
+.analytics h3{
+    margin-bottom:15px;
+    color:#2e7d32;
+}
+
+/* Grid */
+
+.analytics-grid{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+}
+
+/* Individual stat */
+
+.stat{
+    background:white;
+    padding:15px 20px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.05);
+    width:120px;
+}
+
+.stat span{
+    font-size:22px;
+    font-weight:bold;
+    color:#2e7d32;
+}
+
+.stat p{
+    font-size:13px;
+    color:#555;
+    margin-top:5px;
+}

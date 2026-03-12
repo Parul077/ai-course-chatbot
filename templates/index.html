@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NextGen Academy AI Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <!-- Landing Section -->
+
+    <div class="landing">
+
+        <h1>NextGen AI Course Assistant</h1>
+
+        <p>
+            Ask questions about our coding programs, curriculum,
+            projects, and placement support. Our AI assistant is
+            here to guide you through your learning journey.
+        </p>
+
+    </div>
+
+    <!-- Features Section -->
+
+    <div class="features">
+
+        <div class="feature">
+            <span>🤖</span>
+            <p>AI-powered responses using LLM</p>
+        </div>
+
+        <div class="feature">
+             <span>⚡</span>
+             <p>Real-time chat interface</p>
+        </div>
+
+        <div class="feature">
+             <span>🧠</span>
+             <p>Session-based conversation memory</p>
+        </div>
+
+        <div class="feature">
+             <span>🚀</span>
+             <p>Smart caching for faster responses</p>
+        </div>
+
+    </div>
+
+    <!-- Chatbot -->
+
+    <div class="chat-container">
+
+        <div class="chat-header">
+            NextGen Coding Academy Assistant
+        </div>
+
+        <div class="chat-box" id="chat-box">
+            <div class="message bot">
+                Hello! How can I help you with our coding courses today?
+            </div>
+        </div>
+
+        <div id="typing" style="display:none;">
+            Bot is typing...
+        </div>
+
+        <div class="chat-input">
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Ask about duration, EMI, projects..."
+                onkeypress="handleKeyPress(event)"
+            >
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+    </div>
+
+    <div class="analytics">
+
+    <h3>System Analytics</h3>
+
+    <div class="analytics-grid">
+
+        <div class="stat">
+            <span id="totalMessages">0</span>
+            <p>Total Messages</p>
+        </div>
+
+        <div class="stat">
+            <span id="cacheHits">0</span>
+            <p>Cache Hits</p>
+        </div>
+
+        <div class="stat">
+            <span id="llmCalls">0</span>
+            <p>LLM Calls</p>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="/static/chat.js"></script>
+
+</body>
+</html>
