@@ -130,6 +130,26 @@ http://127.0.0.1:5000
 
 ---
 
+## 📸 Project Demo
+
+
+<img width="1892" height="828" alt="Home UI" src="https://github.com/user-attachments/assets/0747c821-918b-4d74-9abb-0214dbb1660b" />
+
+<br><br>
+
+<img width="1896" height="820" alt="Chat UI" src="https://github.com/user-attachments/assets/365663f1-0864-449b-869b-2fe2f336d41a" />
+
+<br><br>
+
+<img width="1892" height="828" alt="Chat UI (2)" src="https://github.com/user-attachments/assets/ecbc52e8-1ce4-4a4b-afdd-7079d489c10d" />
+
+<br><br>
+
+<img width="1889" height="826" alt="Analytics UI" src="https://github.com/user-attachments/assets/b335f6c6-977e-49ca-a579-249cf0d52924" />
+
+
+
+
 ## 🚀 Future Improvements
 
 - Document-based chatbot using **RAG (Retrieval Augmented Generation)**
